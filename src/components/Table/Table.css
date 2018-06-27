@@ -1,0 +1,142 @@
+.table {
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  border-bottom: 1px solid #ededed;
+  padding: 10px 30px;
+}
+
+.table-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+button {
+  border: 1px solid #EBEDF2;
+  background-color: #fff;
+  height: 38px;
+  padding: 0 15px;
+}
+
+.table-header button {
+  border-radius: 3px;
+}
+
+.table-body {
+  padding: 30px;
+}
+
+.table-wrapper {
+  display: flex;
+}
+
+.table td {
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 30px;
+  border-right: 1px solid #ededed;;
+  min-width: 160px;
+  height: 76px;
+}
+
+.table-left {
+  z-index: 1000;
+  box-shadow: 15px 0 20px -10px rgba(0, 0, 0, 0.05);
+}
+
+.table-right {
+  overflow-x: auto;
+}
+
+.table-right::-webkit-scrollbar {
+  height: 4px;
+  width: 12px;
+}
+
+.table-right::-webkit-scrollbar-thumb {
+  background: #dadce3;
+  -webkit-border-radius: 1ex;
+}
+
+.table-right::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+.table td:last-child {
+  border-right: 0;
+}
+
+.table thead tr td {
+  background-color: #f4f3fb;
+  font-weight: bold;
+  color: #2e2e2e;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #fbfbfd;
+}
+
+.table tbody td {
+  white-space: nowrap;
+}
+
+.table-search {
+  height: 36px;
+  border: 1px solid #EBEDF2;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+}
+
+.table-left i.la {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #EBEDF2;
+  border-radius: 50%;
+}
+
+/* Other components */
+
+.switch-buttons {
+  margin-bottom: 30px;
+  text-align: end;
+}
+
+.switch-buttons button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.switch-buttons button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.switch-checked {
+  background-color: #f4f5f8;
+}
+
+input[type="checkbox"] {
+  margin: 0 25px 0 0;
+}
+
+.select {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.select select {
+  padding: 0 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  height: 30px;
+  width: 65px;
+  border: 0;
+  background-color: #EBE9F2;
+}
