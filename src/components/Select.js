@@ -1,10 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { changeDisplay } from '../actions';
 
-const Select = ({ value, count, onChange }) => (
+const Select = ({ value, count, changeDisplay }) => (
   <div className="select">
     <select
       value={value}
-      onChange={onChange}
+      onChange={changeDisplay}
     >
       <option value={5}>5</option>
       <option value={10}>10</option>
@@ -16,4 +18,8 @@ const Select = ({ value, count, onChange }) => (
   </div>
 );
 
-export default Select;
+const mapDispatchToProps = dispatch => ({
+  changeDisplay: ({ target: { value } }) => dispatch(changeDisplay(value)),
+});
+
+export default connect(null, mapDispatchToProps)(Select);

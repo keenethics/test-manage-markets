@@ -1,0 +1,2 @@
+export const CHANGE_DISPLAY = 'CHANGE_DISPLAY';
+export const SWITCH_IMAGES = 'SWITCH_IMAGES';
