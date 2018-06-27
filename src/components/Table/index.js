@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-// import 'line-awesome/dist/css/line-awesome.css';
 import './Table.css';
 import Row from './Row';
 import Switch from '../Switch';
